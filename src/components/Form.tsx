@@ -1,4 +1,4 @@
-import { type SubmitEvent ,type ReactNode } from 'react';
+import { type SubmitEvent, type ReactNode } from 'react';
 import Btn from './Btn';
 import './Form.css';
 
@@ -9,11 +9,11 @@ type FormProps = {
 };
 
 export default function Form({
-                                 onSubmit,
-                                 submitLabel = 'Submit',
-                                 children,
-                             }: FormProps) {
-    const handleSubmit = (event: SubmitEvent<HTMLFormElement> ) => {
+    onSubmit,
+    submitLabel = 'Submit',
+    children,
+}: FormProps) {
+    const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
         event.preventDefault();
         const values = Object.fromEntries(
             new FormData(event.currentTarget).entries(),
@@ -26,7 +26,7 @@ export default function Form({
             {children}
             <Btn
                 type="primary"
-                btn={{ onClick: () => {}, children: submitLabel }}
+                btn={{ onClick: () => { }, children: submitLabel }}
             />
         </form>
     );
