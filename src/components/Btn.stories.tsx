@@ -22,3 +22,25 @@ export const Default: Story = {
         disabled: false
     },
 };
+
+export const WithEmojiIcon: Story = {
+    args: {
+        type: 'primary',
+        btn: {
+            onClick: () => { },
+            children: 'Submit'
+        },
+        icon: <span>🚀</span>,
+    },
+};
+
+export const WithIconComponent: Story = {
+    args: {
+        type: 'primary',
+        btn: {
+            onClick: () => { },
+            children: 'Submit'
+        },
+        icon: <span style={{ marginRight: '8px' }}>★</span>, // Example styling
+    },
+};
