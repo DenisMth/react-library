@@ -6,7 +6,7 @@ type BtnType = {
 }
 
 type BtnProps = {
-    type: 'primary' | 'secondary';
+    type: 'primary' | 'secondary' | 'danger';
     btn: BtnType;
 }
 
