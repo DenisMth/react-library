@@ -1,0 +1,11 @@
+.card{
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px gray;
+    padding: 16px;
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
