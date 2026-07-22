@@ -1,3 +1,5 @@
+import './Btn.css';
+
 type BtnType = {
     onClick: () => void;
     children: React.ReactNode;
