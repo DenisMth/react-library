@@ -1,5 +1,6 @@
 import { type SubmitEvent ,type ReactNode } from 'react';
 import Btn from './Btn';
+import './Form.css';
 
 type FormProps = {
     onSubmit: (values: Record<string, FormDataEntryValue>) => void;
