@@ -29,3 +29,10 @@ export const Default: Story = {
       </Form>
   ),
 };
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
+  },
+  render: Default.render,
+};
