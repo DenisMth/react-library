@@ -20,5 +20,6 @@ export const Default: Story = {
             content: 'Wow ! Amazing content !',
             img: 'https://hips.hearstapps.com/hmg-prod/images/c33b2259-8c6b-4308-bc6f-5373d8a6600d.jpeg?crop=0.668xw:1.00xh;0.194xw,0&resize=640:*'
         },
+        btnText: 'More',
     },
 };
