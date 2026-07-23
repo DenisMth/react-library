@@ -7,14 +7,16 @@ type BtnType = {
 
 type BtnProps = {
     type: 'primary' | 'secondary' | 'danger';
+    htmlType?: 'button' | 'submit' | 'reset';
     disabled?: boolean;
     btn: BtnType;
     icon?: React.ReactNode;
 }
 
-export default function Btn({ type, btn, disabled, icon }: BtnProps) {
+export default function Btn({ type, htmlType = 'button', btn, disabled, icon }: BtnProps) {
     return (
         <button
+            type={htmlType}
             className={`btn ${type}`}
             onClick={btn.onClick}
             disabled={disabled}
