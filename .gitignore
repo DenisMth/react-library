@@ -34,3 +34,4 @@ build-storybook.log
 !.yarn/sdks
 !.yarn/versions
 .idea
+/dist
