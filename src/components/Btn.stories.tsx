@@ -44,3 +44,25 @@ export const WithIconComponent: Story = {
         icon: <span style={{ marginRight: '8px' }}>★</span>, // Example styling
     },
 };
+
+export const LoadingState: Story = {
+    args: {
+        type: 'primary',
+        btn: {
+            onClick: () => { },
+            children: 'Loading...'
+        },
+        loading: true,
+    },
+};
+
+export const DisabledState: Story = {
+    args: {
+        type: 'primary',
+        btn: {
+            onClick: () => { },
+            children: 'Disabled'
+        },
+        disabled: true,
+    },
+};  
