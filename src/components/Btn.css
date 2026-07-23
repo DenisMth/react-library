@@ -28,7 +28,7 @@
 
 .btn.danger {
   background-color: var(--danger);
-  color: #fff;
+  color: var(--text-primary-color);
 }
 
 .btn.danger:hover {
@@ -43,4 +43,27 @@
 
 .btn:disabled:hover {
   background-color: var(--disabled-bg-color);
+}
+
+.btn-icon {
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-loader {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

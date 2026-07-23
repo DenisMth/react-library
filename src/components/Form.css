@@ -4,9 +4,9 @@
   gap: 1rem;
   max-width: 320px;
   padding: 2rem;
-  background: #fff;
+  background: var(--input-bg);
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-sm);
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -20,22 +20,22 @@
   margin: 0;
   font-size: 20px;
   font-weight: 800;
-  color: #1a202c;
+  color: var(--text-dark);
 }
 
 .form-description {
   margin: 0;
   font-size: 13px;
-  color: #718096;
+  color: var(--text-muted);
 }
 
 .form-error {
   margin: 0;
   padding: 0.6rem 0.75rem;
-  border: 1px solid #feb2b2;
+  border: 1px solid var(--error-border);
   border-radius: 6px;
-  background-color: #fff5f5;
-  color: #c53030;
+  background-color: var(--error-bg);
+  color: var(--danger-hover);
   font-size: 13px;
   font-weight: 700;
 }
