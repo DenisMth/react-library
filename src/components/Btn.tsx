@@ -19,7 +19,10 @@ export default function Btn({ type, htmlType = 'button', btn, disabled, loading,
         <button
             type={htmlType}
             className={`btn ${type}`}
-            onClick={btn.onClick}
+            onClick={(e) => {
+              e.stopPropagation();
+              btn.onClick();
+            }}
             disabled={disabled || loading}
         >
             {loading ? (
