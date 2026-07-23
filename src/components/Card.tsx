@@ -9,6 +9,7 @@ type CardType = {
     content: React.ReactNode;
     img: string;
     backContent?: React.ReactNode;
+    buttonLink?: string;
 }
 
 type CardProps = {
@@ -36,7 +37,7 @@ export default function Card({ type, card, btnText }: CardProps) {
                     <h4>{card.subtitle}</h4>
                     <p>{card.content}</p>
                     <img src={card.img}/>
-                    <Btn type={`${type}`} btn={{ onClick: () =>  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank"), children: btnText }}/>
+                    <Btn type={`${type}`} btn={{ onClick: () =>  window.open(card.buttonLink, "_blank"), children: btnText }}/>
                 </div>
                 <div className="card-back">
                     {card.backContent ?? <h3>Surprise !</h3>}
