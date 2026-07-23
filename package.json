@@ -4,6 +4,17 @@
   "description": "Starter template to get up and running quickly with React and Storybook",
   "author": "Chromatic <https://chromatic.com/>",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exorts": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/chromaui/intro-storybook-react-template"
