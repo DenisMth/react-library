@@ -44,3 +44,9 @@
 .btn:disabled:hover {
   background-color: var(--disabled-bg-color);
 }
+
+.btn-icon {
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
