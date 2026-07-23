@@ -31,9 +31,9 @@
 
     padding: 16px;
     border-radius: 16px;
-    box-shadow: 4px 4px 4px 4px gray;
+    box-shadow: var(--shadow-md);
 
-    background: white;
+    background: var(--input-bg);
 
     img {
       width: 100%;
@@ -47,7 +47,7 @@
   .card-back {
     transform: rotateY(180deg);
     background: var(--primary);
-    color: white;
+    color: var(--text-primary-color);
   }
 
   &.secondary {

@@ -28,7 +28,7 @@
 
 .btn.danger {
   background-color: var(--danger);
-  color: #fff;
+  color: var(--text-primary-color);
 }
 
 .btn.danger:hover {

@@ -8,7 +8,20 @@
 
   --text-primary-color: #fff;
   --text-secondary-color: #4a5568;
+  --text-muted: #718096;
+  --text-dark: #1a202c;
 
   --disabled-bg-color: #e2e8f0;
   --disabled-text-color: #a0aec0;
+
+  --border-color: #d7e0e5;
+  --input-bg: #fff;
+  --input-focus-border: #2cc5d2;
+  --input-focus-shadow: rgba(44, 197, 210, 0.15);
+
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-md: 4px 4px 4px 4px gray;
+
+  --error-bg: #fff5f5;
+  --error-border: #feb2b2;
 }
