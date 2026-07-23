@@ -36,7 +36,7 @@ export default function Card({ type, card, btnText }: CardProps) {
                     <h4>{card.subtitle}</h4>
                     <p>{card.content}</p>
                     <img src={card.img}/>
-                    <Btn type={`${type}`} btn={{ onClick: () => {}, children: btnText }}/>
+                    <Btn type={`${type}`} btn={{ onClick: () =>  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank"), children: btnText }}/>
                 </div>
                 <div className="card-back">
                     {card.backContent ?? <h3>Surprise !</h3>}
